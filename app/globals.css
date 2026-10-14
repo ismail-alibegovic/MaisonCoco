@@ -37,3 +37,82 @@ h2,h3{text-wrap:balance}
  .menu-toggle{min-height:44px}
  .signature-image,.signature-1 .signature-image,.signature-2 .signature-image,.signature-3 .signature-image,.signature-4 .signature-image,.signature-5 .signature-image{height:clamp(160px,47vw,260px)}
 }
+
+/* Touch-first layout and editorial rhythm */
+@media(max-width:760px){
+ body{font-size:16px}
+ .section{padding-block:64px}
+ .eyebrow{font-size:10px;letter-spacing:.09em}
+ .section-head>.section-intro{font-size:14px;line-height:1.7}
+ .language{min-width:44px;min-height:44px;display:grid;place-items:center;font-size:12px}
+ .nav-end{gap:12px}
+ .menu-toggle{min-width:78px;justify-content:space-between;font-size:13px}
+ .hero-bottom p{font-size:12px;line-height:1.7}
+ .hero-bottom .small-link{font-size:12px;min-height:44px;display:inline-flex;align-items:center}
+ .hero-bottom{min-height:140px}
+ .bread-content h2{font-size:clamp(48px,16vw,68px)}
+ .bread-lower p,.pat-bottom p{font-size:14px;line-height:1.65}
+ .story h2,.story h1{font-size:clamp(40px,11.7vw,58px)}
+ .story-visual>img{height:clamp(330px,110vw,480px)}
+ .story-copy>p:not(.eyebrow){font-size:15px}
+ .patisserie h2{font-size:clamp(43px,13.5vw,65px)}
+ .pat-bottom{align-items:center}
+ .pat-product img{margin-left:5%;width:95%}
+ .signature-grid{gap:36px 18px}
+ .product-caption h3{font-size:clamp(19px,5.2vw,24px)}
+ .product-caption>span{font-size:10px;line-height:1.5}
+ .product-plus{width:30px;height:30px}
+ .category-tabs{scroll-snap-type:x proximity;scroll-padding-inline:8px;padding-left:2px}
+ .category-tabs button{font-size:13px;scroll-snap-align:start;min-height:56px}
+ .catalog-product{gap:18px;grid-template-columns:42% minmax(0,1fr);padding-block:22px}
+ .catalog-info h3{font-size:clamp(22px,6vw,28px);overflow-wrap:anywhere}
+ .catalog-info p{font-size:13px;line-height:1.6}
+ .catalog-info .eyebrow{font-size:9px}
+ .detail-link{font-size:12px;min-height:32px;margin-top:12px}
+ .catalog-photo{height:180px}
+ .catering-copy>p:not(.eyebrow),.hospitality p:last-child{font-size:14px}
+ .catering-copy h1,.catering-copy h2{font-size:clamp(43px,12vw,60px)}
+ .location-detail{padding:26px 22px}
+ .location-list strong{font-size:20px}
+ .hours>div{font-size:13px;gap:12px;padding-block:7px}
+ .location-detail>p:not(.eyebrow){font-size:13px}
+ .location-phone{display:inline-flex;align-items:center;min-height:44px}
+ .location-actions{flex-wrap:wrap}
+ .location-actions .text-link,.solid-link{min-height:46px;font-size:12px}
+ .fine-print{font-size:12px!important;line-height:1.7}
+ .gallery-grid figcaption{font-size:9px;line-height:1.5}
+ .footer-top h2{font-size:clamp(42px,12vw,64px)}
+ .footer-top .eyebrow{font-size:9px;max-width:200px}
+ .footer-top p:last-child{font-size:13px}
+ .footer-links{gap:28px 22px;grid-template-columns:1fr 1.2fr}
+ .footer-links a{font-size:12px;line-height:1.5;min-height:44px;display:flex;align-items:center;padding-block:8px}
+ .footer-bottom a{min-height:44px;display:flex;align-items:center}
+ .footer-bottom{align-items:center}
+ .product-dialog{width:calc(100% - 24px);max-height:calc(100dvh - 24px)}
+ .dialog-inner{max-height:calc(100dvh - 24px);overscroll-behavior:contain}
+ .dialog-photo{height:210px;min-height:210px}
+ .dialog-close{position:sticky;top:10px;right:auto;margin:10px 10px -54px auto;grid-column:1;grid-row:1;z-index:3}
+ .dialog-photo{grid-column:1;grid-row:1}
+ .dialog-copy{padding:26px 24px 32px}
+ .dialog-copy>p{font-size:14px}
+ .contact-row{font-size:12px;padding-block:20px;flex-wrap:wrap}
+ .mobile-nav.is-open{padding-bottom:max(32px,env(safe-area-inset-bottom));height:calc(100dvh - 76px)}
+}
+@media(max-width:359px){
+ .hero-serif{font-size:78px}
+ .hero-stage{height:325px}
+ .hero-product{top:55px}
+ .hero-product img{height:235px}
+ .hero-cta{width:95px;height:95px}
+ .hero-bottom p{max-width:170px}
+ .signature-grid{gap:30px 14px}
+ .catalog-product{grid-template-columns:1fr}
+ .catalog-photo{height:220px}
+ .catalog-info h3{font-size:28px}
+ .catalog-info p{font-size:14px}
+ .catalog-info .eyebrow{font-size:10px}
+ .pat-bottom{align-items:flex-start;flex-direction:column}
+ .pat-bottom p{max-width:none}
+ .pat-bottom .circle-link{align-self:flex-end}
+ .footer-top{align-items:flex-start}
+}
