@@ -116,3 +116,10 @@ h2,h3{text-wrap:balance}
  .pat-bottom .circle-link{align-self:flex-end}
  .footer-top{align-items:flex-start}
 }
+
+/* Arrow icons are inline SVG so iOS never swaps them for emoji glyphs. */
+svg.arrow{display:inline-block;flex-shrink:0;width:1em;height:1em;overflow:visible;vertical-align:middle}
+svg.arrow-inline{font-size:.9em;vertical-align:-.1em;margin-left:.1em}
+.hero-note .arrow{display:block;font-size:46px;margin-top:10px}
+.hero-scroll .arrow{font-size:28px}
+@media(max-width:760px){.hero-note .arrow{font-size:30px;margin-top:6px}}
