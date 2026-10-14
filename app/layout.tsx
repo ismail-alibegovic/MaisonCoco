@@ -1,0 +1,4 @@
+import type { Metadata } from 'next';
+import './globals.css';
+export const metadata:Metadata={metadataBase:new URL('https://maison-coco-sarajevo.alibegovicismail698.chatgpt.site'),title:{default:'Maison Coco — Savoir Vivre | Sarajevo',template:'%s | Maison Coco'},description:'Francuska artisan pekara u Sarajevu. Hljeb od kiselog tijesta, puter kroasani, francuske poslastice i catering. Otkrijte Maison Coco.',openGraph:{title:'Maison Coco — Savoir Vivre',description:'Francusko umijeće. Sarajevska svakodnevnica.',images:[{url:'/images/5-Savoir-vivre_Web.webp',width:1920,height:819}],locale:'bs_BA',type:'website'},icons:{icon:'/images/0-logo-coco.webp'},robots:{index:false,follow:false}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="bs"><body>{children}</body></html>}
